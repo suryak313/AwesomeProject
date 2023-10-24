@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\__tests__"
   ],
-  "SelectedNode": "\\C:\\Users\\skat\\AwesomeProject",
+  "SelectedNode": "\\App.tsx",
   "PreviewInSolutionExplorer": false
 }
