@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { StackActions } from '@react-navigation/native';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -58,6 +59,7 @@ function Section({children, title}: SectionProps): JSX.Element {
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
+
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
@@ -76,7 +78,7 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Hi Kosal">
+          <Section title="">
             Hi<Text style={styles.highlight}>Kosal</Text> Thanks for inspiring us
           </Section>
           <Section title="See Your Changes">
