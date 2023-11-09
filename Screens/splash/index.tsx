@@ -1,29 +1,27 @@
 
 
-import React from 'react'
-import Login from ./LoginScreen;
+import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { StackActions } from '@react-navigation/native';
+import {Text,View,} from 'react-native';
 
-import {
-    Text,
-    Alert,
-    View,
-} from 'react-native';
 
 function splash(): JSX.Element {
-    const navigation = useNavigation();
-    setTimeout(() => {
-        navigation.dispatch(StackActions.replace(Login));
-        Alert.alert("Move to next screen");
-    }, 2000);
-    return (
-        <View>
-            <Text>"Hello Splash"</Text>
-            
-        </View>
+const navigation = useNavigation();
+    useEffect(() => {
+            setTimeout(() => {
+            console.log ('Dragon')
+            navigation.dispatch(StackActions.replace('Login'));
+        }, 2000);
+    },[]
+    )
+  return ( 
+     <View style={{ flex: 1, backgroundColor: 'blue', alignItems: 'center', justifyContent: 'center' }}>
+      <Text>splashscreen</Text>
+    </View>         
     );
 }
+
 export default splash;
 
 
