@@ -9,7 +9,7 @@ const navigation = useNavigation();
     useEffect(() => {
             setTimeout(() => {
             console.log ('Dragon')
-            navigation.dispatch(StackActions.replace('Login'));
+            navigation.dispatch(StackActions.replace('login'));
         }, 2000);
     },[]
     )

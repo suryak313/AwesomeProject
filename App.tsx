@@ -1,13 +1,12 @@
 import * as React from 'react';
 import RootNavigator from './src/route';
 
- export function App(): JSX.Element {
+ export function App(){
 
   return (
       
         <RootNavigator />
-    
+   
   );
 }
-
-export default App();
+export default App;
