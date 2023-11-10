@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { StackActions } from '@react-navigation/native';

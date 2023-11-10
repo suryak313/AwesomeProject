@@ -1,22 +1,13 @@
-
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import splash from './Screens/splash';
-import HomeScreen from './Screens/Login';
+import RootNavigator from './src/route';
 
-const Stack = createNativeStackNavigator();
+ export function App(): JSX.Element {
 
-function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName={'splash'}>
-        <Stack.Screen name="Login" component={HomeScreen} />
-        <Stack.Screen name="splash" component={splash} />
-
-      </Stack.Navigator>
-    </NavigationContainer>
+      
+        <RootNavigator />
+    
   );
 }
 
-export default App;
+export default App();
